@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TestAndroid</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_increase">Increase</string>
+    <string name="text_send">Send</string>
+    <string name="text_decrease">Decrease</string>
+    <string name="text_back">Back</string>
+</resources>

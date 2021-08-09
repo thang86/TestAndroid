@@ -1,0 +1,29 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/fragment_increase">
+
+    <fragment
+        android:id="@+id/fragment_increase"
+        android:name="io.github.thang86.screens.increase.IncreaseFragment"
+        android:label="fragment_increase"
+        tools:layout="@layout/fragment_increase">
+        <action
+            android:id="@+id/action_navigate"
+            app:enterAnim="@anim/animation_in_right"
+            app:destination="@+id/fragment_decrease"
+            app:popUpTo="@+id/fragment_decrease" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_decrease"
+        android:name="io.github.thang86.screens.decrease.DecreaseFragment"
+        android:label="fragment_decrease"
+        tools:layout="@layout/fragment_decrease">
+        <argument
+            android:name="score"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+</navigation>
